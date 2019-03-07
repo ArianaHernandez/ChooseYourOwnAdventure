@@ -6,24 +6,28 @@ var game = {
     levels: {
 
         start: {
-            message: "You come across a dark cave",
+            message: "You are leaving your house to scavenge for food",
             choices: [
                 {
-                    text: "Enter the cave",
-                    nextLevel: "cave",
+                    text:"Go back inside",
+                    nextLevel:"home"
                 },
 
                 {
-                    text: "Keep on moving",
-                    nextLevel: "field",
+                    text: "Go forward",
+                    nextLevel: "Bodaga",
                 },
+                {
+                       text: "Turn the Corner",
+                    nextLevel: "Encounter",
+                }
             ]
         },
 
-        cave: {
+        home: {
             background_image: "fire.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            message: "You died of starvation",
             choices: [
                 {
                     text: "Start over",
@@ -31,15 +35,79 @@ var game = {
                 },
             ]
         },
-
-        field: {
-            message: "Some adventurer you are...",
+        
+        Encounter: {
+            background_image: "zombie.gif",
+            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            message: "You encounter a zombie!",
             choices: [
                 {
-                    text: "Start over",
+                    message:"Fight it",
+                    text: "Fight",
+                    nextLevel: "Fight"
+                },
+                {
+                    text: "Run",
+                    nextLevel: "Bodaga",
+                }
+                
+            ]
+        },
+          Bodaga:{
+            background_image: "fire.gif",
+            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            message: "You've found a bodaga",
+            choices: [
+                {
+                    text: "Go inside",
+                    nextLevel: "Store",
+                },
+                {
+                    text: "Return Home",
+                    nextLevel: "home",
+                }
+             ]
+        },
+           Fight:{
+            background_image: "fire.gif",
+            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            message: "You were brutalized then killed",
+            choices: [
+                {
+                    text: "Start Over",
                     nextLevel: "start",
                 },
-            ]
+             ]
+        },
+        Store:{
+            background_image: "fire.gif",
+            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            message: "You wander inside the store and encounter an angry shop owner. He tells you to leave",
+            choices: [
+                {
+                    text: "Fight Him",
+                    nextLevel: "Fight",
+                },
+                {
+                    text:"Leave",
+                    nextLevel:"home",
+                },
+                {
+                    text:"Beg Him to Spare You",
+                    nextLevel:"win"
+                }
+             ]
+        },
+        win:{
+            background_image: "fire.gif",
+            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            message: "He took pity on you and gave you some bread. You return home, unscathed",
+            choices: [
+                {
+                    text: "Start Over",
+                    nextLevel: "start",
+                },
+             ]
         },
 
     }
