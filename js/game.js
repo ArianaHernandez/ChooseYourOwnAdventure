@@ -54,12 +54,12 @@ var game = {
             ]
         },
           Bodaga:{
-            background_image: "fire.gif",
+            background_image: "bodega.jpg",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You've found a bodaga",
+            message: "You've found a bodega",
             choices: [
                 {
-                    text: "Go inside",
+                    text: "Explore",
                     nextLevel: "Store",
                 },
                 {
@@ -82,7 +82,7 @@ var game = {
         Store:{
             background_image: "fire.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You wander inside the store and encounter an angry shop owner. He tells you to leave",
+            message: "You wander inside the store and encounter an angry shop owner. He tells you to leave!",
             choices: [
                 {
                     text: "Fight Him",
