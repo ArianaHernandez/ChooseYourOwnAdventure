@@ -1,5 +1,4 @@
 // NOTE - You must have a level with the name "start".  This is used as the first level in the game.
-
 var game = {
     music: "98_Lost_Mine.mp3",
     background_image: "intro-bg.jpg",
@@ -80,7 +79,7 @@ var game = {
              ]
         },
         Store:{
-            background_image: "fire.gif",
+            background_image: "shopkeeper.jpg",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
             message: "You wander inside the store and encounter an angry shop owner. He tells you to leave!",
             choices: [
