@@ -1,10 +1,19 @@
 // NOTE - You must have a level with the name "start".  This is used as the first level in the game.
 var game = {
     music: "98_Lost_Mine.mp3",
-    background_image: "intro-bg.jpg",
+    background_image: "loading.gif",
     levels: {
-
         start: {
+            choices: [
+                {
+                    text:"Start",
+                    nextLevel:"crossroads"
+                },
+            ]
+        },
+         crossroads: {
+            background_image: "intro-bg.jpg",
+            music: "Final-Fantasy-7-Boss-Battle.mp3",
             message: "You are leaving your house to scavenge for food",
             choices: [
                 {
@@ -24,13 +33,13 @@ var game = {
         },
 
         home: {
-            background_image: "fire.gif",
+            background_image: "lightning.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
             message: "You died of starvation",
             choices: [
                 {
                     text: "Start over",
-                    nextLevel: "start",
+                    nextLevel: "crossroads",
                 },
             ]
         },
@@ -68,13 +77,13 @@ var game = {
              ]
         },
            Fight:{
-            background_image: "fire.gif",
+            background_image: "gameover.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
             message: "You were brutalized then killed",
             choices: [
                 {
                     text: "Start Over",
-                    nextLevel: "start",
+                    nextLevel: "crossroads",
                 },
              ]
         },
@@ -104,7 +113,7 @@ var game = {
             choices: [
                 {
                     text: "Start Over",
-                    nextLevel: "start",
+                    nextLevel: "crossroads",
                 },
              ]
         },
