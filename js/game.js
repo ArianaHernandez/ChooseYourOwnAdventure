@@ -1,6 +1,6 @@
 // NOTE - You must have a level with the name "start".  This is used as the first level in the game.
 var game = {
-    music: "98_Lost_Mine.mp3",
+    music: "opening.mp3",
     background_image: "loading.gif",
     levels: {
         start: {
@@ -13,7 +13,7 @@ var game = {
         },
          crossroads: {
             background_image: "intro-bg.jpg",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            music: "ambient.mp3",
             message: "You are leaving your house to scavenge for food",
             choices: [
                 {
@@ -34,7 +34,7 @@ var game = {
 
         home: {
             background_image: "lightning.gif",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            music: "storm.mp3",
             message: "You died of starvation",
             choices: [
                 {
@@ -46,7 +46,7 @@ var game = {
         
         Encounter: {
             background_image: "zombie.gif",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            music: "intense.mp3",
             message: "You encounter a zombie!",
             choices: [
                 {
@@ -63,7 +63,7 @@ var game = {
         },
           Bodaga:{
             background_image: "bodega.jpg",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            music: "ambient.mp3",
             message: "You've found a bodega",
             choices: [
                 {
@@ -78,7 +78,7 @@ var game = {
         },
            Fight:{
             background_image: "gameover.gif",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            music: "A_Fallen_Cowboy.mp3",
             message: "You were brutalized then killed",
             choices: [
                 {
@@ -89,7 +89,7 @@ var game = {
         },
         Store:{
             background_image: "shopkeeper.jpg",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            music: "intense.mp3",
             message: "You wander inside the store and encounter an angry shop owner. He tells you to leave!",
             choices: [
                 {
@@ -107,12 +107,12 @@ var game = {
              ]
         },
         win:{
-            background_image: "fire.gif",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            background_image: "theend.gif",
+            music: "A_Quiet_Thought.mp3",
             message: "He took pity on you and gave you some bread. You return home, unscathed",
             choices: [
                 {
-                    text: "Start Over",
+                    text: "Next Day",
                     nextLevel: "crossroads",
                 },
              ]
