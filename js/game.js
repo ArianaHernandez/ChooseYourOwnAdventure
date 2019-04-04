@@ -79,7 +79,7 @@ var game = {
            Fight:{
             background_image: "gameover.gif",
             music: "A_Fallen_Cowboy.mp3",
-            message: "You beat to a bloddy pulp until you died",
+            message: "He beat you to a bloody pulp until you died",
             choices: [
                 {
                     text: "Start Over",
