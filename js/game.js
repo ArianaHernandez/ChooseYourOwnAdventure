@@ -52,7 +52,7 @@ var game = {
                 {
                     message:"Fight it",
                     text: "Fight",
-                    nextLevel: "Fight"
+                    nextLevel: "Bite"
                 },
                 {
                     text: "Run",
@@ -79,12 +79,27 @@ var game = {
            Fight:{
             background_image: "gameover.gif",
             music: "A_Fallen_Cowboy.mp3",
-            message: "You were brutalized then killed",
+            message: "You beat to a bloddy pulp until you died",
             choices: [
                 {
                     text: "Start Over",
                     nextLevel: "crossroads",
                 },
+             ]
+        },
+          Bite:{
+            background_image: "bite.gif",
+            music: "intense.mp3",
+            message: "You were bitten",
+            choices: [
+                {
+                    text: "End Your Life",
+                    nextLevel: "Death",
+                },
+                {
+                    text:"Live as a zombie",
+                    nextLevel:"Zombie",
+                }
              ]
         },
         Store:{
@@ -117,6 +132,27 @@ var game = {
                 },
              ]
         },
-
+    Death:{
+            background_image: "endyourlife.gif",
+            music: "A_Fallen_Cowboy.mp3",
+            message: "You chose end your life for the greater good.",
+            choices: [
+                {
+                    text: "Maybe in another lifetime",
+                    nextLevel: "crossroads",
+                },
+             ]
+        },
+        Zombie:{
+            background_image: "walk.gif",
+            music: "storm.mp3",
+            message: "You walk this life as a mindless, disgusting zombie.",
+            choices: [
+                {
+                    text: "Maybe in another lifetime?",
+                    nextLevel: "crossroads",
+                },
+             ]
+        },
     }
 };
